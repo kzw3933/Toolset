@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\title{The Title}
+\author{kzw3933}
+\date{\today}
+\begin{document}
+\section{Structured Documents}
+\subsection{Title and Abstract}
+In subsection \ref{subsec:method}, we \ldots
+\subsection{Sections}
+\subsection{Labels and Cross-Reference}
+\label{subsec:method}
+
+\begin{equation}
+    \label{eq:euler}
+    e^{i\pi} + 1 = 0
+\end{equation}
+By \eqref{eq:euler}, we have \ldots
+
+\section{Figures and Tables}
+\subsection{Graphic and Floats}
+
+Figure \ref{fig:desktop} shows \ldots
+
+\begin{figure}
+\centering
+\includegraphics[%
+width=0.5\textwidth]{desktop.png}
+\caption{\label{fig:desktop}Aww\ldots.}
+\end{figure}
+
+\subsection{Tables}
+\begin{tabular}{lrr}
+    Item & Qty & Unit \$ \\
+    Widget & 1 & 199.9 \\
+    Gadget & 2 & 399.99 \\
+    Gable & 3 & 19.99 \\
+\end{tabular}
+\begin{tabular}{|l|r|r|}\hline
+    Item & Qty & Unit \$ \\\hline
+    Widget & 1 & 199.9 \\
+    Gadget & 2 & 399.99 \\
+    Gable & 3 & 19.99 \\hline
+\end{tabular}
+
+
+\end{document}
