@@ -1,0 +1,5 @@
+FROM openjdk:8u342-jre
+WORKDIR /app
+COPY ./ruoyi-admin.jar .
+CMD [ "java", "-jar", "ruoyi-admin.jar" ]
+EXPOSE 8080
