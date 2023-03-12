@@ -66,4 +66,22 @@ cargo install evcxr_jupyter
 evcxr_jupyter --install
 ```
 
+### 3. lisp+jupyter
+#### 环境准备
 
+- 操作系统: Ubuntu 20.04
+- python: 3.8.10
+- pip3: 20.0.2
+
+#### 安装roswell
+```bash
+curl -L https://github.com/roswell/roswell/releases/download/v19.08.10.101/roswell_19.08.10.101-1_amd64.deb --output roswell.deb
+sudo dpkg -i roswell.deb && rm -rf roswell.ded
+```
+#### 安装common-lisp-jupyter
+```bash
+export PATH=$PATH:~/.roswell/bin
+ros install common-lisp-jupyter
+```
+
+[备注] 编译期间可能遇到某些库不存在要自行下载(比如libzmq3-dev: `sudo apt install libzmq3-dev`)
