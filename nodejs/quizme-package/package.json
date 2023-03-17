@@ -1,0 +1,21 @@
+{
+  "name": "quizme",
+  "version": "1.0.0",
+  "description": "A CLI tool that will help to test knowledge.",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "kzw3933",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  },
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  }
+}
